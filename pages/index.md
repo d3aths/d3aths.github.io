@@ -29,8 +29,8 @@ Throw +WiDE^+ \;_{the} +Gates\rightarrow LeT\;_{eon}+beComE\;_{instant}^{+}\!
 $$
 
 
-This page will be updated for any projects, skills, professional interests I take up throughout completing my Bachelors degree in IT, and then in future years. I've just made it for this lab so I have no idea what to put lmao.
-<sub>~okay sry thats not professional.~</sub>
+This page will be updated for any projects, skills, professional interests I take up throughout completing my Bachelors degree in IT, and then in future years. I've just made it for this lab so I have no idea what to put lmao.  
+<sub>~~okay sry thats not professional.~~</sub>
 
 
 
