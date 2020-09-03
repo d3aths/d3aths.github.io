@@ -23,14 +23,14 @@ Version: v2.0
 
 ## Instructions
 
-*Download or fork to your github repository  
-*Modify the _config.yml file  
-*(Custom domain name) Modify CNAME file  
-*Modify the pages/index.md file to customize the homepage  
-*Delete files in the _posts/ folder and add your own posts  
-*Sync to github remote warehouse  
-*Use the encrypted content as the id of the encrypted text  
- *You can use online tools to encrypt text: [sjcl official bcqlr.com](http://bitwiseshiftleft.github.io/sjcl/demo/)  [bcqlr.com](http://bcqlr.com/sjcl/)
+* Download or fork to your github repository  
+* Modify the _config.yml file  
+* (Custom domain name) Modify CNAME file  
+* Modify the pages/index.md file to customize the homepage  
+* Delete files in the _posts/ folder and add your own posts  
+* Sync to github remote warehouse  
+* Use the encrypted content as the id of the encrypted text  
+  * You can use online tools to encrypt text: [sjcl official](http://bitwiseshiftleft.github.io/sjcl/demo/)  [bcqlr.com](http://bcqlr.com/sjcl/)
 
 ## Engineering structure
 
