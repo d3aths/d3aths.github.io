@@ -24,7 +24,7 @@ permalink: /
 
 
 $$
-Throw +WiDE^+{the}\;_{+} Gates\rightarrow +LeT\;_{eon}+beComE\;_{instant}^{+}\!
+Throw +WiDE^+ ^{the}\;_{+} Gates\rightarrow +LeT\;_{eon}+beComE\;_{instant}^{+}\!
 $$
 
 
