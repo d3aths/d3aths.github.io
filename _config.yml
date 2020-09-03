@@ -1,8 +1,8 @@
 ## Settings
-title: pRoJEct-NeGYa
-owner: "DeerRIDER"
-url: "https://akiritsu.github.io"
-baseurl: "/pRoJEct-NeGYa"
+title: Profile
+owner: "Celeste"
+url: "www.endlessnoctem.me"
+baseurl: ""
 permalink: /:title/
 description: ""
 markdown: kramdown
@@ -10,10 +10,10 @@ webrick:
   headers:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
-email: "akiritsu@outlook.com"
-github: "akiritsu/pRoJEct-NeGYa"
+email: "celeste-quinn@live.nmit.ac.nz"
+github: "github.com/d3aths"
 
-statement: "Designed by DeerRIDER, All Rights Reserved"
+statement: "Are you sure you're awake?"
 # default max toc levels: 1 - 6 (h1 - h6)
 toc_level: 3
 # texts randomly displayed in background
