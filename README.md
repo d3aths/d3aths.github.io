@@ -1,50 +1,50 @@
 # PRoJEct-NeGYa
 
-黑客帝国掉字母儿风格的个人主页模板。
+The matrix style personal homepage template.
 
-版本： v2.0
+Version: v2.0
 
-## 特性
+## characteristic
 
-1. 狂拽酷炫
-2. 代码高亮
-3. MathJax公式
-4. 文章索引
-5. 高度可定制化
-6. 加密内容
+1. Crazy and cool
+2. Code highlight
+3. MathJax Official
+4. Article index
+5. Highly customizable
+6. Encrypted content
 
-## 更新日志
+## Update log
 
-2020.7.24: v2.0 修改工程结构，优化scss文件结构
+2020.7.24: v2.0 modify the project structure, optimize the scss file structure
 
-2019.7.17：更新说明文件
+2019.7.17: Update documentation
 
-2019.6.15：v1.0 正式版
+2019.6.15: v1.0 official version
 
-## 使用方法
+## Instructions
 
-* 下载或者fork到自己的github仓库里
-* 修改_config.yml文件
-* （自定义域名）修改CNAME文件
-* 修改pages/index.md文件，自定义主页
-* 删除_posts/文件夹里的文件，添加自己的文章
-* 同步到github远程仓库
-* 将加密内容作为加密文本的id
-  * 可使用在线工具加密文本：[sjcl官方](http://bitwiseshiftleft.github.io/sjcl/demo/)  [bcqlr.com](http://bcqlr.com/sjcl/)
+*Download or fork to your github repository
+*Modify the _config.yml file
+*(Custom domain name) Modify CNAME file
+*Modify the pages/index.md file to customize the homepage
+*Delete files in the _posts/ folder and add your own posts
+*Sync to github remote warehouse
+*Use the encrypted content as the id of the encrypted text
+ *You can use online tools to encrypt text: [sjcl official bcqlr.com](http://bitwiseshiftleft.github.io/sjcl/demo/)  [bcqlr.com](http://bcqlr.com/sjcl/)
 
-## 工程结构
+## Engineering structure
 
-网站内容：
-* _posts：文章
-* pages：页面
-* assets/img：图
+Website content：
+* _posts: Posts
+* pages：page
+* assets/img：image
 
-功能样式：
-* _includes/：子页面模块
-* _layouts/：页面模板（单纯地组合子页面模块）
-* assets/css/：样式表文件
-* assets/fonts/：字体文件
-* assets/js/：脚本文件
-* _config.yml：配置文件
-* _sass/：分类的scss样式表文件
+Function style:
+* _includes/：subpage module
+* _layouts/：page template (simple combination of sub-page modules)
+* assets/css/：stylesheet file
+* assets/fonts/：font file
+* assets/js/：script file
+* _config.yml：configuration file
+* _sass/：classified scss style sheet file
 
