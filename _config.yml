@@ -11,7 +11,7 @@ webrick:
     Access-Control-Allow-Origin: "*"
 ## Global Variables
 email: "celeste-quinn@live.nmit.ac.nz"
-github: "github.com/d3aths"
+github: "d3aths"
 
 statement: "Are you sure you're awake?"
 # default max toc levels: 1 - 6 (h1 - h6)
