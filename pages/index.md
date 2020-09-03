@@ -18,6 +18,7 @@ permalink: /
 * Js, C#, Css, Html
 * Nelson, New Zealand
 
+
   <p class="encrypted" id="yEEnZkbuEeRloNGBICs+fQGlGuDQwJl/kpjU7UKPzGun/m3YZf">*Encrypted content!*</p>
  
   <p class="encrypted" id="H4C2lkbg6RPnDyFOI5oihQOiJ7f0oIfWRkdC6XWDPYcU0zl2k=">*Encrypted content!*</p>
@@ -27,6 +28,7 @@ $$
 Throw +WiDE^+ \;_{the} +Gates\rightarrow LeT\;_{eon}+beComE\;_{instant}^{+}\!
 $$
 
+This page will be updated for any projects, skills, professional interests I take up throughout completing my Bachelors degree in IT, and then in future years. I've just made it for this lab so I have no idea what to put lmao okay sry thats not professional.
 
 
 ```ruby
