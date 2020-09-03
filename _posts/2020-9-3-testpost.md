@@ -5,4 +5,4 @@ author: Celeste
 category: Journal
 date: 2020/9/3
 ---
-<p class="encrypted" id="G0euoAiozy3MNkfCSwSzFgOZejcWx1+b88qCQQeHEXRzhOR+iz">this journal is encrypted and you must enter the token to view content</p>
+<p class="encrypted" id="EEnZkbuEeRloNGBICs+fQGlGuDQwJl/kpjU7UKPzGun/m3YZf">this journal is encrypted and you must enter the token to view content</p>

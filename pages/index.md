@@ -18,9 +18,9 @@ permalink: /
 * Js, C#, Css, Html
 * Nelson, New Zealand
 
-  <p class="encrypted" id="/MZAf/PKx9jpw8/Jnp7XQQFki2ibGnArZP46W+keVThXquhWwFROEFnbY8eC57Tw==">*Encrypted content!*</p>
+  <p class="encrypted" id="yEEnZkbuEeRloNGBICs+fQGlGuDQwJl/kpjU7UKPzGun/m3YZf">*Encrypted content!*</p>
  
-  <p class="encrypted" id="G7D+0370pNmixIP1j7teCg1jtm9XCdOWYFH61lcM0LYWlT0hB3rS9raIs=">*Encrypted content!*</p>
+  <p class="encrypted" id="H4C2lkbg6RPnDyFOI5oihQOiJ7f0oIfWRkdC6XWDPYcU0zl2k=">*Encrypted content!*</p>
 
 
 $$
