@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moonsync — A private lunar companion</title>
+<meta name="description" content="Track the moon, track your cycle. A private, ad-free app. Your data never leaves your device.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    min-height: 100vh;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0a1133;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e8d098;
+    line-height: 1.6;
+  }
+  a { color: #c8a040; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .hero-banner {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(10, 17, 51, 0.3);
+    background-image: url('assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(31, 40, 88, 0.6);
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10,17,51,0.4) 0%, rgba(10,17,51,0.85) 100%);
+  }
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .wordmark {
+    color: #e8d098;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 22px;
+    font-size: 13px;
+  }
+  .nav-links a {
+    color: #a08858;
+  }
+
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 30px 24px 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a08858;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 500;
+    color: #f0e0a8;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 12px rgba(10, 17, 51, 0.8);
+  }
+  .hero p {
+    font-size: 16px;
+    color: #c8b888;
+    max-width: 480px;
+    margin: 0 auto 32px;
+    line-height: 1.65;
+    text-shadow: 0 1px 6px rgba(10, 17, 51, 0.6);
+  }
+
+  .download-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .download-btn {
+    background: #c8a040;
+    color: #1a1408;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .download-btn:hover {
+    background: #d8b050;
+    text-decoration: none;
+  }
+
+  .screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 0 24px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .screen {
+    width: 240px;
+    height: 480px;
+    background-color: rgba(18, 26, 68, 0.7);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+    border: 1px solid rgba(31, 40, 88, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a7090;
+    font-size: 13px;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+    backdrop-filter: blur(4px);
+  }
+  .screen.s1 { background-image: url('assets/screen-1.png'); }
+  .screen.s2 { background-image: url('assets/screen-2.png'); }
+  .screen.s3 { background-image: url('assets/screen-3.png'); }
+
+  .privacy-band {
+    background: rgba(6, 12, 37, 0.85);
+    padding: 50px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(26, 32, 80, 0.8);
+    border-bottom: 1px solid rgba(26, 32, 80, 0.8);
+    backdrop-filter: blur(6px);
+  }
+  .privacy-band p {
+    font-size: 20px;
+    color: #e8d098;
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  .privacy-band .sub {
+    font-size: 14px;
+    color: #a08858;
+    margin-top: 14px;
+    font-weight: 400;
+  }
+
+  .features {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .feature {
+    background: rgba(18, 26, 68, 0.78);
+    border: 1px solid rgba(31, 40, 88, 0.8);
+    border-radius: 12px;
+    padding: 26px 22px;
+    backdrop-filter: blur(6px);
+  }
+  .feature h3 {
+    font-size: 17px;
+    color: #e8d098;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .feature p {
+    font-size: 14px;
+    color: #a89878;
+    line-height: 1.6;
+  }
+
+  .footer {
+    background: rgba(6, 12, 37, 0.92);
+    padding: 28px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(26, 32, 80, 0.8);
+    backdrop-filter: blur(6px);
+  }
+  .footer .links {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .footer .links a {
+    font-size: 13px;
+    color: #a08858;
+  }
+  .footer .copy {
+    font-size: 12px;
+    color: #6a7090;
+  }
+
+  @media (max-width: 740px) {
+    body { background-attachment: scroll; }
+    .hero h1 { font-size: 32px; }
+    .features { grid-template-columns: 1fr; }
+    .screenshots { gap: 14px; }
+    .screen { width: 200px; height: 400px; }
+    .nav { padding: 16px 20px; }
+    .nav-links { gap: 14px; font-size: 12px; }
+    .hero-banner { height: 180px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero-banner">
+  <div class="hero-overlay"></div>
+  <nav class="nav">
+    <div class="wordmark">Moonsync</div>
+    <div class="nav-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="#">GitHub</a>
+    </div>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="eyebrow">A LUNAR COMPANION</div>
+  <h1>Track the moon.<br>Track your cycle.</h1>
+  <p>Real-time lunar phases, biodynamic gardening, and private cycle tracking — all in one app. No accounts. No ads. No tracking.</p>
+  <div class="download-row">
+    <a href="#" class="download-btn">App Store</a>
+    <a href="#" class="download-btn">Google Play</a>
+  </div>
+</section>
+
+<section class="screenshots">
+  <div class="screen s1">Today</div>
+  <div class="screen s2">Garden</div>
+  <div class="screen s3">Calendar</div>
+</section>
+
+<section class="privacy-band">
+  <p>Your data stays on your phone. Always.</p>
+  <p class="sub">No Google. No Meta. No advertising networks. No parasitic corporate tracking.</p>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>Lunar phases</h3>
+    <p>Real-time moon phases, illumination percentage, day of the lunar cycle, and zodiac sign — calculated locally on your device.</p>
+  </div>
+  <div class="feature">
+    <h3>Cycle tracking</h3>
+    <p>Private period tracking that never touches a server. Your cycle data is stored only on your phone and never leaves it.</p>
+  </div>
+  <div class="feature">
+    <h3>No tracking</h3>
+    <p>No accounts to create. No personal data collected. No third-party trackers. You stay anonymous, always.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="#">GitHub</a>
+  </div>
+  <div class="copy">© 2026 Moonsync · Made in New Zealand</div>
+</footer>
+
+</body>
+</html>
